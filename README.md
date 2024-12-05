@@ -8,18 +8,40 @@ El Reino de las Matrices está en peligro. La malvada Matriz \( A \), un antiguo
 - Dado \( n \), la dimensión de la matriz \( A \), y un número entero \( k \), eleva \( A \) a la potencia \( k \) utilizando métodos eficientes que aprovechen sus propiedades mágicas (simetría).  
 
 ## **Restricciones**  
-- \( A \) es una matriz **simétrica** (\( A[i][j] = A[j][i] \)).  
+- \( A \) es una matriz **simétrica** (\(A[i][j] = A[j][i]\)).  
 - 2 ≤ n ≤ 10: El tamaño de la matriz es controlable, pero desafiante.  
-- 1 ≤ k ≤ $$10^5$$: La potencia puede ser colosal, así que necesitarás astucia.   
-- No puedes invocar artefactos mágicos como bibliotecas preconstruidas para calcular $$( A^k)$$ directamente.  
+- 1 ≤ k ≤ $$10^3$$: La potencia puede ser colosal, así que necesitarás astucia.   
+- No puedes invocar artefactos mágicos como bibliotecas preconstruidas para calcular $$(A^k)$$ directamente.  
 
 ## **Entrada**  
 1. Un entero \( n \): la dimensión de la matriz.  
 2. La matriz \( A \) de tamaño $$( n \times n )$$ con sus elementos separados por espacios.  
-3. Un entero \( k \): la potencia a la que se debe elevar la matriz.  
+3. Un entero \( k \): la potencia a la que se debe elevar la matriz.
+
+$$
+\begin{pmatrix}
+  2& 1 & -1 \\
+  -1 & 0 & 1 \\
+  -1 & -1 & 2
+\end{pmatrix}
+$$
 
 ## **Salida**  
 Una matriz $$( A^k )$$ de tamaño $$\( n \times n \)$$, con sus valores redondeados a 2 decimales si es necesario.  
+
+Resultado: $$(A^4)$$
+
+$$
+\begin{pmatrix}
+  46& -5 & -35 \\
+  -5 & 6 & -5 \\
+  -35 & -5 & 46
+\end{pmatrix}
+$$
+
+
+
+
 
 
 ## **Habilidades Especiales (Tips)**  
@@ -30,12 +52,16 @@ Una matriz $$( A^k )$$ de tamaño $$\( n \times n \)$$, con sus valores redondea
 ## **Recompensa**  
 Si logras controlar el poder de la matriz, serás coronado como **Maestro del Reino de las Matrices**. ¡Los números te estarán eternamente agradecidos!  
 
-## Requisitos
+## **Requisitos**
 1. Usa Python 3.7.
 2. Escribe código conforme a PEP8.
 3. Escribe algunas pruebas (considera usar pytest o uniitest).
 4. Documenta tu solución en un archivo.
 5. Se os adjunta un Python para poder generar las matrices de origen asi como información de algebra por si se quiere repasar.
+6. Se puede usar [NumPy](https://numpy.org)
+
+## **Requisitos**
+El orden de complejidad tiene que estar entre **$$O(m^3)$$** para valores propios o **$$O(log(n)⋅m^3)$$**
 
 🎮 **¡Prepárate para la batalla matemática!** 🚀  
 
